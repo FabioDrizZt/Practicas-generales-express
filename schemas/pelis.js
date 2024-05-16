@@ -23,7 +23,10 @@ const peliSchema = z.object({
 function validarPeli(campos) {
   return peliSchema.safeParse(campos)
 }
-
+function validarPeliParcialmente(campos) {
+  return peliSchema.partial().safeParse(campos)
+}
 module.exports = {
   validarPeli,
+  validarPeliParcialmente,
 }

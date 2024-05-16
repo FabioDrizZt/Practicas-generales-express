@@ -27,3 +27,13 @@ content-type: application/json
 
 ### Borrar una peli por id
 DELETE http://localhost:3000/peliculas/5ad1a235-0d9c-410a-b32b-220d91689a08
+
+### Modificar/Actualizar una peli
+PATCH http://localhost:3000/peliculas/5ad1a235-0d9c-410a-b32b-220d91689a08
+content-type: application/json
+
+{
+    "sql": "SELECT * FROM users",
+    "duration": 200,
+    "year" : 2023
+}
